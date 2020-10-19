@@ -38,7 +38,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://uts-tst-18218007.azurewebsites.net/api/TriggerUTS-TST18218007", requestOptions)
+            fetch("https://tst-025.azurewebsites.net/api/tst-025?clientId=default", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).name))
             .catch(error => console.log('error', error));
